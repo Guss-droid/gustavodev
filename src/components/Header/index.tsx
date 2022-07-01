@@ -28,9 +28,10 @@ export function Header() {
       />
 
       <Box display="flex" gap={8} mr={8}>
-        <Text>Sobre mim</Text>
-        <Text>Minhas tecnologias</Text>
-        <Text>Meus projetos</Text>
+        <Text><a href="#aboutMe">Sobre mim</a></Text>
+        <Text><a href="#myTechnologies">Minhas tecnologias</a></Text>
+        <Text><a href="#myRepos">Meus projetos</a></Text>
+        <Text><a href="#mySocialNetworks">Redes sociais</a></Text>
       </Box>
     </Flex>
   )

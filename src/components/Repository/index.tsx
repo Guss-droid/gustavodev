@@ -1,7 +1,9 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 export function Repository() {
   return (
-    <Flex></Flex>
+    <Flex>
+      <Text></Text>
+    </Flex>
   )
 }

@@ -3,6 +3,8 @@ import { Divider, Flex } from "@chakra-ui/react";
 
 import { User } from "../components/User";
 import { Header } from "../components/Header";
+import { Technology } from "../components/Technology";
+import { Repositories } from "../components/Repositories";
 
 export default function Home() {
   return (
@@ -11,13 +13,18 @@ export default function Home() {
         <title>Gustavo Ré | Dev</title>
       </Head>
 
-      <Flex w="100%" flexDir="column" h="300vh">
+      <Flex w="100%" flexDir="column" h="120vh">
         <Header />
 
         <User />
 
-        <Divider />
+        <Divider mt={8} />
 
+        <Technology />
+
+        <Divider mt={16} />
+
+        <Repositories />
       </Flex>
     </>
   )

@@ -23,7 +23,7 @@ export function AvatarUrl() {
   }, [])
 
   return (
-    <Flex borderWidth={1} borderColor="gray.150" borderRadius={99999}>
+    <Flex borderWidth={1} borderColor="gray.500" borderRadius={99999}>
       <Img
         alt={userImg?.name}
         src={userImg?.avatar_url}
