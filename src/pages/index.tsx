@@ -13,7 +13,7 @@ export default function Home() {
         <title>Gustavo Ré | Dev</title>
       </Head>
 
-      <Flex w="100%" flexDir="column" h="120vh">
+      <Flex w="100%" flexDir="column">
         <Header />
 
         <User />
