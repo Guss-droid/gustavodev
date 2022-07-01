@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export function User() {
   return (
-    <Flex align="center" gap={8} m={8} ml={20} mt={16}>
+    <Flex align="center" gap={8} m={8} ml={20} mt={10} id="aboutMe">
       <AvatarUrl />
 
       <Box>
