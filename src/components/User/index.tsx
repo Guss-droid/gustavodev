@@ -1,12 +1,27 @@
-import { Box, Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { AvatarUrl } from "../Avatar";
 
 import { ImLocation } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 
 export function User() {
+
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true
+  })
+
   return (
-    <Flex align="center" gap={8} m={8} ml={20} mt={10} id="aboutMe">
+    <Flex
+      align="center"
+      // justify="center"
+      gap={8}
+      m={8}
+      // ml={20}
+      mt={10}
+      id="aboutMe"
+      flexDir={["column", "column", "row", "row"]}
+    >
       <AvatarUrl />
 
       <Box>
@@ -34,13 +49,15 @@ export function User() {
         </Stack>
       </Box>
 
-      <Flex ml="auto" mr={32} fontWeight="500" fontSize="18">
-        <Text maxW={450}>
-          Eu tenho 17 anos e comecei a estudar programação quando tinha apenas 15,
-          no final de 2020. Inicialmente comece com Js, html e css. Hoje uso bastante
-          React, React Native, Next e Node.
-        </Text>
-      </Flex>
+      {isWideVersion &&
+        <Flex ml="auto" mr={32} fontWeight="500" fontSize="18">
+          <Text maxW={[650, 450, 450]}>
+            Eu tenho 17 anos e comecei a estudar programação quando tinha apenas 15,
+            no final de 2020. Inicialmente comece com Js, html e css. Hoje uso bastante
+            React, React Native, Next e Node.
+          </Text>
+        </Flex>
+      }
     </Flex>
   )
 }

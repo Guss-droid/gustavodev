@@ -42,11 +42,15 @@ export function Repositories() {
   }, [page,])
 
   return (
-    <Flex id="myRepos" mt={10} w="100%" justify="center" mb={16}>
-      <Flex mt={16} w="70%" align="center" flexDir="column">
+    <Flex id="myRepos" mt={10} w="100%" justify="center">
+      <Flex mt={16} mx={8} align="center" flexDir="column">
         <Text fontWeight="600" fontSize="32">Meus projetos</Text>
 
-        <Grid templateColumns="repeat(4, 2fr)" gap={6} w="100%">
+        <Grid
+          templateColumns={["2fr 2fr", "2fr 2fr", "repeat(2, 1fr)" ,"repeat(4, 2fr)"]}
+          gap={6}
+          w="100%"
+        >
           {repository.map(repo => (
             <Repository key={repo.id} repository={repo} />
           ))}

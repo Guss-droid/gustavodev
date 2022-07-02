@@ -24,9 +24,16 @@ export function Repository({ repository }: IRepository) {
 
   return (
     <Flex mt={6} flexDir="column" align="left">
-      <Text fontSize="22">{repository.name}</Text>
+      <Text fontSize={["18", "18", "18", "18", "18", "22"]}>
+        {repository.name}
+      </Text>
 
-      <Text fontSize="14" color="gray.400">Criado em {formatDate}</Text>
+      <Text
+        fontSize={["12", "12", "12", "12", "12", "14"]}
+        color="gray.400"
+      >
+        Criado em {formatDate}
+      </Text>
 
       <Flex align="center" gap={2} mt={2}>
         {repository.language !== null &&

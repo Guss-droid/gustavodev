@@ -31,7 +31,7 @@ export function Header() {
         <Text><a href="#aboutMe">Sobre mim</a></Text>
         <Text><a href="#myTechnologies">Minhas tecnologias</a></Text>
         <Text><a href="#myRepos">Meus projetos</a></Text>
-        <Text><a href="#mySocialNetworks">Redes sociais</a></Text>
+        <Text><a href="#socialMedia">Redes sociais</a></Text>
       </Box>
     </Flex>
   )

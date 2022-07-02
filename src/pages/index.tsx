@@ -1,12 +1,20 @@
 import Head from "next/head";
-import { Divider, Flex } from "@chakra-ui/react";
+import { Divider, Flex, useBreakpointValue } from "@chakra-ui/react";
 
 import { User } from "../components/User";
 import { Header } from "../components/Header";
 import { Technology } from "../components/Technology";
 import { Repositories } from "../components/Repositories";
+import { SocialMedia } from "../components/SocialMedia";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
+
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
+
   return (
     <>
       <Head>
@@ -14,7 +22,7 @@ export default function Home() {
       </Head>
 
       <Flex w="100%" flexDir="column">
-        <Header />
+        {isWideVersion && <Header />}
 
         <User />
 
@@ -25,6 +33,12 @@ export default function Home() {
         <Divider mt={16} />
 
         <Repositories />
+
+        <Divider mt={10} />
+
+        <SocialMedia />
+
+        <Footer />
       </Flex>
     </>
   )

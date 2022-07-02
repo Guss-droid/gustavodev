@@ -1,4 +1,4 @@
-import { Text, useColorMode } from "@chakra-ui/react";
+import { Text, useBreakpointValue, useColorMode } from "@chakra-ui/react";
 
 interface ITecText {
   tec: number;
@@ -23,6 +23,10 @@ export function TecText({ tec }: ITecText) {
 
   const { colorMode } = useColorMode()
   const tecSelected = texts.find(tecSel => tecSel.id === tec)
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true
+  })
 
   return (
     <Text
@@ -32,6 +36,8 @@ export function TecText({ tec }: ITecText) {
       borderRadius={10}
       bg={colorMode === "dark" ? "gray.900" : "gray.100"}
       p={6}
+      w="100%"
+      mt={!isWideVersion ? 8 : 0 }
     >
       {tec === 0 ?
         "Clique em algum botão para ver sua descrição"
