@@ -59,7 +59,7 @@ export function Repository({ repository }: IRepository) {
 
       <Box display="flex" flexDirection="column" mt={4} gap={2}>
         {repository.private === false &&
-          <a target="_blank" href={repository.html_url}>
+          <a target="_blank" href={repository.html_url} rel="noreferrer">
             <Button
               w="100%"
               bg="teal.600"

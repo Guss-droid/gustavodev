@@ -11,7 +11,7 @@ export function SocialMedia() {
         <Text fontWeight="600" fontSize="32">Minhas redes sociais</Text>
 
         <Stack direction={["column", "column", "row", "row"]} align="center" justify="center" mt={8} spacing={6}>
-          <a target="_blank" href="https://github.com/Guss-droid">
+          <a target="_blank" href="https://github.com/Guss-droid" rel="noreferrer">
             <IconButton
               aria-label="Github"
               icon={<Icon as={AiOutlineGithub} fontSize="28" />}
@@ -24,7 +24,7 @@ export function SocialMedia() {
             />
           </a>
 
-          <a target="_blank" href="https://www.linkedin.com/in/gustavo-re/">
+          <a target="_blank" href="https://www.linkedin.com/in/gustavo-re/" rel="noreferrer">
             <IconButton
               aria-label="LinkedIn"
               icon={<Icon as={AiFillLinkedin} fontSize="28" />}
@@ -37,7 +37,7 @@ export function SocialMedia() {
             />
           </a>
 
-          <a target="_blank" href="https://www.instagram.com/guh_re/">
+          <a target="_blank" href="https://www.instagram.com/guh_re/" rel="noreferrer">
             <IconButton
               aria-label="Instagram"
               icon={<Icon as={AiOutlineInstagram} fontSize="28" />}
