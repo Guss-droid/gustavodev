@@ -1,4 +1,5 @@
-import { Box, Flex, Icon, IconButton, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, Icon, IconButton, Link, Text, useColorMode } from "@chakra-ui/react";
+import { ActiveLink } from "../ActiveLink"
 
 import { FiMoon, FiSun } from "react-icons/fi"
 
@@ -28,10 +29,29 @@ export function Header() {
       />
 
       <Box display="flex" gap={8} mr={8}>
-        <Text><a href="#aboutMe">Sobre mim</a></Text>
-        <Text><a href="#myTechnologies">Minhas tecnologias</a></Text>
-        <Text><a href="#myRepos">Meus projetos</a></Text>
-        <Text><a href="#socialMedia">Redes sociais</a></Text>
+        <ActiveLink href="#aboutMe">
+          <Text cursor="pointer">
+            Sobre mim
+          </Text>
+        </ActiveLink>
+
+        <ActiveLink href="#myTechnologies">
+          <Text cursor="pointer">
+            Minhas tecnologias
+          </Text>
+        </ActiveLink>
+
+        <ActiveLink href="#myRepos">
+          <Text cursor="pointer">
+            Meus projetos
+          </Text>
+        </ActiveLink>
+
+        <ActiveLink href="#socialMedia">
+          <Text cursor="pointer">
+            Redes sociais
+          </Text>
+        </ActiveLink>
       </Box>
     </Flex>
   )
