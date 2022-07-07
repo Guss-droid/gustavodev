@@ -16,6 +16,7 @@ export function Technology() {
         <Flex
           justify="space-between"
           w="100%"
+          h="100%"
           mt={10}
           flexDir={["column", "column", "row", "row"]}
         >

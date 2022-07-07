@@ -50,11 +50,13 @@ export function User() {
       </Box>
 
       {isWideVersion &&
-        <Flex ml="auto" mr={32} fontWeight="500" fontSize="18">
-          <Text maxW={[650, 450, 450]}>
-            Eu tenho 17 anos e comecei a estudar programação quando tinha apenas 15,
-            no final de 2020. Inicialmente comece com Js, html e css. Hoje uso bastante
-            React, React Native, Next e Node.
+        <Flex ml="auto" mr={32} fontWeight="500" fontSize="18" mt="10">
+          <Text maxW={[650, 520, 520]}>
+            Tenho 17 anos e estudo programação desde o final de 2020, quando tinha apenas 15.
+            Naquela época, fui à fundo em HTML e CSS e comecei a me aventurar em Javascript.
+            Hoje, muito estudo e vários projetos depois, minhas stacks preferidas incluem
+            React, React Native, Next.js e Node.js, além de diversas outras ferramentas e
+            tecnologias que incorporei ao meu dia-a-dia como desenvolvedor.
           </Text>
         </Flex>
       }

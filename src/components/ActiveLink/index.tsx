@@ -13,7 +13,6 @@ export function ActiveLink({ children, ...rest }: IActiveLink) {
   const router = useRouter()
   const { colorMode } = useColorMode()
   const asPathWithoutBar = router.asPath.replace("/", "")
-  console.log(asPathWithoutBar, rest.href)
 
   if (asPathWithoutBar === rest?.href || rest?.as) {
     isActive = true

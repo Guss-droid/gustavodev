@@ -23,6 +23,8 @@ export function TecButtons({ setTec }: ITecButtons) {
     <Grid
       gap={4}
       templateColumns={["1fr 1fr", "1fr 1fr", "repeat(4, 1fr)"]}
+      minHeight="17rem"
+      maxH="17.1rem"
     >
       <IconsComp
         label="React"
