@@ -2,10 +2,22 @@ import { Box, Flex, Icon, IconButton, Link, Text, useColorMode } from "@chakra-u
 import { ActiveLink } from "../ActiveLink"
 
 import { FiMoon, FiSun } from "react-icons/fi"
+import { useState } from "react";
 
 export function Header() {
 
+  const [isScroll, setIsScroll] = useState(false)
   const { toggleColorMode, colorMode } = useColorMode()
+
+  function changeVisibilityHeader() {
+    if (window.scrollY >= 14) {
+      setIsScroll(true)
+    } else {
+      setIsScroll(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeVisibilityHeader)
 
   return (
     <Flex
@@ -17,6 +29,8 @@ export function Header() {
       w="100%"
       justify="space-between"
       borderBottomWidth={1}
+      transition="1s"
+      opacity={isScroll ? 0.3 : 1}
     >
       <IconButton
         aria-label="Switch theme"

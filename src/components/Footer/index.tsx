@@ -7,10 +7,10 @@ export function Footer() {
       mt="auto"
       mb={2}
       color="gray.500"
-      gap={2}
+      gap={1}
       mx="auto"
     >
-      <Text>Feito por</Text>
+      <Text>Feito com ❤ por</Text>
       <Text fontWeight="600">Gustavo Ré - 2022</Text>
     </Flex>
   )
